@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="out"></p>
+	<script type="text/javascript">
+		var mangKytu = ["a","b","c","a","a"];
+		var kyTu = prompt("Nhập ký tự");
+		function kiemTraKyTu(kyTu) {
+			var dem = 0;
+			for (var i = 0; i < mangKytu.length; i++) {
+				if (kyTu === mangKytu[i]) {
+					dem ++;
+					document.getElementById('out').innerHTML = ("Ký tự " + kyTu + " thuộc trong mảng và xuất hiện " + dem + " lần");
+				}
+				else document.getElementById('out').innerHTML = ("-1");
+			}
+		}
+		kiemTraKyTu(kyTu);
+	</script>
+
+</body>
+</html>

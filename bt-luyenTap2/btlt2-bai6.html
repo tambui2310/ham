@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nhapChu = prompt("Nhập chữ: ");
+		function kiemTraChu(chu) {
+			if (chu == "a" || chu == "e"|| chu =="u" || chu =="o" || chu === "i") 
+				return true;
+			else return false;
+		}
+		var result = kiemTraChu(nhapChu);
+		document.write(nhapChu + (result ? " là nguyên âm " : " là phụ âm" ));
+		
+	</script>
+
+</body>
+</html>

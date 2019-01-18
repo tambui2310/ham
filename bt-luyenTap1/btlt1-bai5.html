@@ -11,7 +11,7 @@
 		var nhap = prompt("Nhập ngôi sao: ");
 		function nhapNgoisao(ngoisao,chomsao) {
 			for (var i = 0; i < ngoisao.length; i++) {
-				if (nhap == ngoisao[i] ) {
+				if (nhap === ngoisao[i] ) {
 					document.getElementById('out').innerHTML= (nhap + " thuộc chòm sao " + chomsao[i]);
 					break;
 				}

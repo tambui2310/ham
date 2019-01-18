@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nhap = prompt("Nhập ký tự : ");
+		function kyTu(num) {
+			if ( num >= "0" && num <= "9")
+				return true;
+			else return false;
+		}
+		var kq = kyTu(nhap);
+		document.write(nhap + ( kq ? " là số" : " là chữ "));
+
+	</script>
+
+</body>
+</html>
