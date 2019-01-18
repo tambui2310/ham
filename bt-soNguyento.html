@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function soNguyento(n) {
+   		var dem = 0;
+   		for ( var i = 1 ; i <= n ; i++){
+       		if (n % i === 0)
+           	dem++;
+   		} if ( dem === 2 )
+       		return true;
+      		else  return false;
+   		}
+   		for (var n = false ; n <= 1000 ; n++ ) {
+       		if (soNguyento(n) === true) {
+           	document.write(n + " ");
+       		}
+   		}
+	</script>
+
+</body>
+</html>

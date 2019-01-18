@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="" id="feet" placeholder="Nhập feet" oninput="chuyenDoi1(this.value)">
+	<p>Meters là : <span id="met"></span> </p>
+	<input type="text" name="" id="meter" placeholder="Nhập meter" oninput="chuyenDoi2(this.value)">
+	<p>Feet là : <span id="f"></span> </p>
+
+	<script type="text/javascript">
+		function chuyenDoi1(feet) {
+			meter = 0.305 * feet;
+			document.getElementById("met").innerHTML = meter;
+		}
+		function chuyenDoi2(meter) {
+			feet = 3.279 * meter ;
+			document.getElementById("f").innerHTML = feet;
+
+		}
+
+
+		
+	</script>
+
+
+</body>
+</html>
